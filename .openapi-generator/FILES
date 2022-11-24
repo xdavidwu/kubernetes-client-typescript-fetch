@@ -1,6 +1,5 @@
 .gitignore
 .npmignore
-.openapi-generator-ignore
 README.md
 package.json
 src/apis/AdmissionregistrationApi.ts
@@ -616,4 +615,5 @@ src/models/V2beta2ResourceMetricStatus.ts
 src/models/VersionInfo.ts
 src/models/index.ts
 src/runtime.ts
+tsconfig.esm.json
 tsconfig.json

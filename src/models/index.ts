@@ -1,3 +1,5 @@
+/* tslint:disable */
+/* eslint-disable */
 export * from './AdmissionregistrationV1ServiceReference';
 export * from './AdmissionregistrationV1WebhookClientConfig';
 export * from './ApiextensionsV1ServiceReference';

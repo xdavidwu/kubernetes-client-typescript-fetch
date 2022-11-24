@@ -1,3 +1,5 @@
+/* tslint:disable */
+/* eslint-disable */
 export * from './AdmissionregistrationApi';
 export * from './AdmissionregistrationV1Api';
 export * from './ApiextensionsApi';
