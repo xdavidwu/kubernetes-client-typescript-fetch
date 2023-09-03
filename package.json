@@ -1,6 +1,6 @@
 {
   "name": "kubernetes-client-typescript-fetch",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "OpenAPI client for kubernetes-client-typescript-fetch",
   "author": "OpenAPI-Generator",
   "repository": {
