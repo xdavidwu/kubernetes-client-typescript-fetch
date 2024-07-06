@@ -7,7 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: prepare
-        run: apk add npm
+        run: |
+          apk add npm
+          npm config set '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'
       - name: build
         # prepare script builds
         run: npm ci
