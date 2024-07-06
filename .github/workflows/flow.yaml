@@ -1,7 +1,7 @@
-name: build
+name: flow
 on: push
 jobs:
-  build:
+  flow:
     runs-on: ubuntu-latest
     container: alpine:3.20
     steps:
@@ -11,3 +11,8 @@ jobs:
       - name: build
         # prepare script builds
         run: npm ci
+      - name: publish
+        if: ${{ github.ref_type == 'tag' }}
+        run: npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
