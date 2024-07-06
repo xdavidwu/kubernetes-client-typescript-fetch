@@ -16,6 +16,6 @@ jobs:
       - name: publish
         if: ${{ github.ref_type == 'tag' }}
         # too much files, npm print file sizes on notice level
-        run: npm --loglevel warn publish
+        run: npm --loglevel warn publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
